@@ -45,11 +45,8 @@ const count = (target, input) => {
   input.forEach(element => {
     count = element.reduce(counting, 0);
     result = result + count;
-    // console.log(count);
     function counting(counter, current) {
-      // console.log(target);
       if (current === target) {
-        //  console.log("yes")
         return counter + 1;
       }
 
